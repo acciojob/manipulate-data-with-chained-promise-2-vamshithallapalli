@@ -17,11 +17,10 @@ manipulateArray.then((arr)=>{
 	})
 }).then((evenNumbers) => {
 	return new Promise((resolve) => {
-		let multi = evenNumbers.map(num => num*2);
-		setTimeout(()=> {
-			document.getElementById("output").innerText = multi.toString();
-                        resolve(multi);
-		}, 2000)
+	let multi = evenNumbers.map(num => num*2);
+	setTimeout(()=> {
+		document.getElementById("output").innerText = multi.toString();
+        resolve(multi);
+	}, 2000)
 	})
 })
-}
